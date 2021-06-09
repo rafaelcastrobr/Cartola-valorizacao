@@ -38,7 +38,7 @@ body {
 .camilo-par {
   color: #53e4a3;
   text-shadow: 0.1rem 0.1rem 1rem black;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .camilo-par a{
@@ -51,6 +51,18 @@ body {
 
 .camilo-par a:hover {
   color: #33bd7f;
+}
+.anun-par p{
+  display: flex;
+  align-items: center;
+}
+.anun-par img {
+
+}
+
+.img-par {
+  margin-left: 0.5rem;
+  width: 1.2rem;
 }
 
 .main-box-a {
