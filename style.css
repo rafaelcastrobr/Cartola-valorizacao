@@ -9,8 +9,12 @@ html {
   font-family: 'Roboto Slab', serif;
 }
 
-.main-body {
+body {
   background-color: #aaa;
+  height: 100%;
+}
+
+.main-body {
   height: 50rem;
   display: flex;
   justify-content: center;
