@@ -18,10 +18,8 @@ function result() {
   var prJogador = parseFloat(document.getElementById("pr-jogador-b").value);
   var ptRodadaUm = parseFloat(document.getElementById("pt-rodada-um-b").value);
 
-  var resultadoA = ((4.9 * prJogador - 4) * ptRodadaUm) / 7;
+  var resultadoA = ((4.9 * prJogador)- 4 * ptRodadaUm) / 7;
 
   document.getElementById("resultado-final-b").innerHTML = resultadoA.toFixed(2);
 
-  console.log(prJogador);
-  console.log(ptRodadaUm);
 }
