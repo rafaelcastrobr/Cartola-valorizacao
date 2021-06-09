@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 62.5%;
+  font-family: 'Roboto Slab', serif;
+}
+
+.main-body {
+  background-color: #aaa;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-box-a {
+  display: flex;
+  flex-direction: column;
+  height: 38rem;
+  width: 25rem;
+  border: 0.5rem solid #3D3D3D;
+}
+
+.main-body-a h3 {
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.main-box-a h4 {
+  margin-top: 1rem;
+  color: #ff0000;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  height: 10rem;
+  align-items: center;
+}
+
+.main-grid input {
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 4rem;
+}
+
+.main-grid input{
+  text-indent: 0.5rem;
+}
+
+.main-grid label {
+  margin-top: 0.5rem;
+}
+
+.botao-style {
+  height: 2rem;
+  width: 4rem;
+  background-color: #000000;
+  color: #ccc;
+  font-family: inherit;
+}
+
+.resultado-a {
+  padding: 1rem;
+}
+
+p {
+  color: #ff0000;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+  height: 2rem;
+}
