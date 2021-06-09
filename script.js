@@ -1,6 +1,5 @@
 
 
-
 function resultA() {
   var coeficientePt = parseFloat(document.getElementById("coeficiente-pt").value);
   var prJogador = parseFloat(document.getElementById("pr-jogador").value);

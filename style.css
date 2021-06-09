@@ -16,12 +16,35 @@ body {
 
 
 .main-body {
-  height: 60rem;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 2rem;
+}
+
+.logo-camilo {
+  min-width: 100%;
+  height: 5rem;
+}
+
+.camilo-par {
+  color: #53e4a3;
+  text-shadow: 0.1rem 0.1rem 1rem black;
+  margin-bottom: 1rem;
+}
+
+.camilo-par a{
+  text-decoration: none;
+}
+
+.camilo-par a:visited {
+  color: #53e4a3;
+}
+
+.camilo-par a:hover {
+  color: #33bd7f;
 }
 
 .main-box-a {
