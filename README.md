@@ -11,8 +11,8 @@ https://www.instagram.com/camillojoga10/
 ### Usando operação indicada
 
 ~~~
- Se jogou a R2:<br>
-   Min = (3.8*Preço + Pts_R2 - 2*Pts_R1)/14<br>
- Se não jogou a R2: <br>
+ Se jogou a R2:
+   Min = (3.8*Preço + Pts_R2 - 2*Pts_R1)/14
+ Se não jogou a R2:
    Min = (4.9*Preço - 4*Pts_R1)/7
  ~~~
