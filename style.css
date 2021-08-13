@@ -52,10 +52,18 @@ body {
 .camilo-par a:hover {
   color: #33bd7f;
 }
+
+/****** Anúncio *******/
+.anun-par-prin {
+  display: none;
+}
+
 .anun-par p{
-  display: flex;
+  display: none;
   align-items: center;
 }
+/****** Anúncio *******/
+
 
 .img-par {
   margin-left: 0.5rem;
