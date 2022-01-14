@@ -1,5 +1,8 @@
 
 
+
+
+/*
 const soma = document.querySelector('.rodada1-btn').addEventListener('click', () => {
   alert('oi');
 })
@@ -8,7 +11,7 @@ const soma = document.querySelector('.rodada1-btn').addEventListener('click', ()
 
 export { soma }
 
-/*
+
 
 
 let inp = document.querySelector('.inp'); //local digitado
