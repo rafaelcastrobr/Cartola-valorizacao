@@ -1,7 +1,7 @@
 import { $result, $input } from './module/$local.js'
 
-//let requestURL = 'https://raw.githubusercontent.com/rafaelcastrobr/Cartola-valorizacao/newCartola/assets/json/rodada2.json';
-let requestURL = '../assets/json/rodada2.json'
+let requestURL = 'https://raw.githubusercontent.com/rafaelcastrobr/Cartola-valorizacao/newCartola/assets/json/rodada2.json';
+//let requestURL = '../../Cartola-Valorizacao/assets/json/rodada2.json'
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 
