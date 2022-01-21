@@ -45,13 +45,11 @@
 
     </div>
     <div class="d-flex mb-3">
-      <input type="text" class="input-nome rodada-inp form-control" placeholder="Nome Jogador">
+      <input type="text" class="input-nome rodada-inp form-control" placeholder="Nome Jogador" pattern="[^0-9]+">
       <button class="btn btn-outline-secondary rodada-btn" type="button"><img src="assets/img/search_black_24dp.svg"
           alt="pesquisar"></button>
     </div>
-    <div class="result">
-      <!--Adicionar os resultados-->
-    </div>
+    <div class="result"></div>
     <hr class="mt-5">
   <script src="./assets/components/sweet/sweetalert2.all.min.js"></script>
   <script src="assets/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
