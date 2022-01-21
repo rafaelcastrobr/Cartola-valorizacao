@@ -1,5 +1,13 @@
 import { $result, $input } from './module/$local.js';
-import { carregaElemento } from './module/carregaElemento.js'
+import { media } from './module/media.js';
+import { carregaElemento } from './module/carregaElemento.js';
+
+/*
+carregado o valor da ultima pontuaçao///
+carregar proximos valores
+aplicar o foreach
+*/
+
 
 let requestURL = 'https://raw.githubusercontent.com/rafaelcastrobr/Cartola-valorizacao/newCartola/assets/json/rodada2.json';
 //let requestURL = '../../Cartola-Valorizacao/assets/json/rodada2.json'
@@ -35,11 +43,12 @@ function inicioProgram() {
       title: 'Buscando..',
       showConfirmButton: false,
       timer: 1100
-    })
+    });
 
     let cartola = request.response;
     $result.innerHTML = '';
-    carregaElemento(cartola)
+    media(cartola);
+    carregaElemento(cartola);
   };
 
 }

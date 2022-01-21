@@ -1,4 +1,5 @@
 import { $result, $input } from './$local.js';
+import { pontos } from './media.js'
 
 
 
@@ -25,10 +26,10 @@ function carregaElemento(cartola) {
       nomeDigitado === nomeBuscadoSeparado['0'] ||
       nomeDigitado === nomeBuscadoSeparado['1']) {
 
-      let value = [];
 
       let atletaImg = atletas[i]['foto'];
       let atletaImgAtualizado = atletaImg.replace('FORMATO', '140x140')
+      let atletID = atletas[i]['atleta_id']
 
 
       let clubeId = atletas[i]['clube_id'];
@@ -37,11 +38,14 @@ function carregaElemento(cartola) {
       let posicaoId = atletas[i]['posicao_id'];
       let posicaoNome = posicoes[posicaoId]['nome']
 
+      const facanagua = pontos();
+      console.log('pontos(): ', facanagua[i]);
 
       const p = document.createElement('p');
       p.innerHTML += `<p><img src="${clubeImg}" style="width: 40px;"> 
       <img src="${atletaImgAtualizado}" style="width: 70px;"> 
-      ${atletas[i]['apelido']} - ${posicaoNome}</p>`
+      ${atletas[i]['apelido']} - ${posicaoNome} - ${pontos()[i]}</p>`
+
 
 
       setTimeout(() => {
