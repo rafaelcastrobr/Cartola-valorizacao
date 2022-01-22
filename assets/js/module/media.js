@@ -1,24 +1,9 @@
 import { $inputCoeficiente } from './$local.js';
 
-function media(cartola) {
-  const { atletas } = cartola;
-
-  atletas.forEach(atleta => {
-    pontos(atleta['pontos_num']);
-
-  });
-
-}
-const pt = [];
-function pontos(ponto) {
-  pt.push(ponto);
-  return pt
-}
-
+console.log(capturaPonto);
 
 function simJogou() {
 
-  const cartola = media(cartola);
 
   var coeficientePt = parseFloat(document.getElementById("coeficiente-pt").value);
   var prJogador = parseFloat(document.getElementById("pr-jogador").value); // preco
@@ -47,4 +32,4 @@ function naoJogou() {
   console.log(coeficientePt);
 }
 
-export { media, pontos }
+//export { media }

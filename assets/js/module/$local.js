@@ -4,4 +4,6 @@ const $result = document.querySelector('.result');
 
 const $inputCoeficiente = document.querySelector('.input-coeficiente');
 
-export { $result, $input, $inputCoeficiente }
+const locals = document.getElementsByName('flexRadioDefault');
+
+export { $result, $input, $inputCoeficiente , locals}

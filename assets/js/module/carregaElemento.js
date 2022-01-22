@@ -1,5 +1,6 @@
-import { $result, $input } from './$local.js';
-import { pontos } from './media.js'
+import { $result, $input, locals } from './$local.js';
+//import { media } from './media.js'
+import { $inputCoeficiente } from './$local.js';
 
 
 
@@ -29,29 +30,67 @@ function carregaElemento(cartola) {
 
       let atletaImg = atletas[i]['foto'];
       let atletaImgAtualizado = atletaImg.replace('FORMATO', '140x140')
-      let atletID = atletas[i]['atleta_id']
 
 
       let clubeId = atletas[i]['clube_id'];
       let clubeImg = clubes[clubeId]['escudos']['60x60'];
 
       let posicaoId = atletas[i]['posicao_id'];
-      let posicaoNome = posicoes[posicaoId]['nome']
+      let posicaoNome = posicoes[posicaoId]['nome'];
 
-      const facanagua = pontos();
-      console.log('pontos(): ', facanagua[i]);
+      let pontosSegundaRodada = atletas[i]['pontos_num'];
+      let pontosMedia = atletas[i]['media_num'];
+
+      const pontosPrimeiraRodada = function ptPrimeiraRodada() {
+        return ((+pontosMedia * 2) - +pontosSegundaRodada)
+      }
+
+      let precoJogador = atletas[i]['preco_num'];
+      let resultado;
+
+
 
       const p = document.createElement('p');
-      p.innerHTML += `<p><img src="${clubeImg}" style="width: 40px;"> 
-      <img src="${atletaImgAtualizado}" style="width: 70px;"> 
-      ${atletas[i]['apelido']} - ${posicaoNome} - ${pontos()[i]}</p>`
+      if (+(atletas[i]['jogos_num']) === 2) {
+        resultado = (((+$inputCoeficiente.value * +precoJogador + +pontosSegundaRodada) - 2 * pontosPrimeiraRodada()) / 14).toFixed(2);
+
+        p.innerHTML += `<p><img src="${clubeImg}" style="width: 40px;"> 
+        <img src="${atletaImgAtualizado}" style="width: 70px;"> 
+        ${atletas[i]['apelido']} - ${posicaoNome} <span style="color:red;">${resultado}</span></p>`;
+
+
+      } else if (+(atletas[i]['jogos_num']) === 1) {
+        resultado = (((+$inputCoeficiente.value * +precoJogador) - 4 * pontosPrimeiraRodada()) / 7).toFixed(2);
+
+        p.innerHTML += `<p><img src="${clubeImg}" style="width: 40px;"> 
+        <img src="${atletaImgAtualizado}" style="width: 70px;"> 
+        ${atletas[i]['apelido']} - ${posicaoNome} <span style="color:green;">${resultado}</span></p>`;
+
+      } else {
+        resultado = `Não jogou`
+      }
+
+      /*
+            if (+(atletas[i]['jogos_num']) === 2) {
+      
+      
+            } else if (+(atletas[i]['jogos_num']) === 1) {
+      
+      
+            } else if (+(atletas[i]['jogos_num']) === 0) {
+      
+              
+            }
+      */
+
+
 
 
 
       setTimeout(() => {
         $result.appendChild(p);
         $input.value = ``;
-      }, 1200);
+      }, 1400);
 
     } else {
       setTimeout(() => {
@@ -72,10 +111,11 @@ function carregaElemento(cartola) {
           })
 
         }
-      }, 1400);
+      }, 1600);
     }
   }
-
 }
 
+
 export { carregaElemento };
+

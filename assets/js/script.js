@@ -1,12 +1,7 @@
 import { $result, $input } from './module/$local.js';
-import { media } from './module/media.js';
+//import { media } from './module/media.js';
 import { carregaElemento } from './module/carregaElemento.js';
 
-/*
-carregado o valor da ultima pontuaçao///
-carregar proximos valores
-aplicar o foreach
-*/
 
 
 let requestURL = 'https://raw.githubusercontent.com/rafaelcastrobr/Cartola-valorizacao/newCartola/assets/json/rodada2.json';
@@ -47,7 +42,6 @@ function inicioProgram() {
 
     let cartola = request.response;
     $result.innerHTML = '';
-    media(cartola);
     carregaElemento(cartola);
   };
 
