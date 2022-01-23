@@ -10,7 +10,7 @@ Versão atual está com api de 2019.
 - Html
 - Css
 - Vanilla JS
-- Sweetalert2 (component)
+- <a href="https://github.com/sweetalert2/sweetalert2">Sweetalert2</a> (component)
 - JSON
 
 ### ❤️ Versão
