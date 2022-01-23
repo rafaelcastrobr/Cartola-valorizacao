@@ -39,4 +39,4 @@ https://www.instagram.com/camillojoga10/
    Min = (3.8*Preço + Pts_R2 - 2*Pts_R1)/14
  Se não jogou a R2:
    Min = (4.9*Preço - 4*Pts_R1)/7
- ~~~
+~~~
