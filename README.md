@@ -8,8 +8,9 @@ Versão atual está com api de 2019.
 
 ### 🔨 Ferramentas
 - Html
-- Css / Sass
+- Css
 - Vanilla JS
+- Sweetalert2 (component)
 - JSON
 
 ### ❤️ Versão
