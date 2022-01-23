@@ -56,7 +56,7 @@ function carregaElemento(cartola) {
 
         p.innerHTML += `<p><img src="${clubeImg}" style="width: 40px;"> 
         <img src="${atletaImgAtualizado}" style="width: 70px;"> 
-        ${atletas[i]['apelido']} - ${posicaoNome} <span style="color:red;">${resultado}</span></p>`;
+        ${atletas[i]['apelido']} - ${posicaoNome} <span style="color:green;">${resultado}</span></p>`;
 
 
       } else if (+(atletas[i]['jogos_num']) === 1) {
@@ -64,27 +64,11 @@ function carregaElemento(cartola) {
 
         p.innerHTML += `<p><img src="${clubeImg}" style="width: 40px;"> 
         <img src="${atletaImgAtualizado}" style="width: 70px;"> 
-        ${atletas[i]['apelido']} - ${posicaoNome} <span style="color:green;">${resultado}</span></p>`;
+        ${atletas[i]['apelido']} - ${posicaoNome} <span style="color:red;">${resultado}</span></p>`;
 
       } else {
         resultado = `Não jogou`
       }
-
-      /*
-            if (+(atletas[i]['jogos_num']) === 2) {
-      
-      
-            } else if (+(atletas[i]['jogos_num']) === 1) {
-      
-      
-            } else if (+(atletas[i]['jogos_num']) === 0) {
-      
-              
-            }
-      */
-
-
-
 
 
       setTimeout(() => {
