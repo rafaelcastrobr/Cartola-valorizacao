@@ -3,15 +3,12 @@ import { $result, $input, locals } from './$local.js';
 import { $inputCoeficiente } from './$local.js';
 
 
-
-
-
-
 function carregaElemento(cartola) {
   const { atletas, clubes, posicoes } = cartola;
-
-
+  
+  
   for (let i = 0; i <= atletas.length; i++) {
+    //console.log(posicoes[i])
 
     const nomeDigitado = ($input.value).toLowerCase();
     const nomeDigitadoSemAcento = nomeDigitado.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
