@@ -6,9 +6,8 @@ import { $inputCoeficiente } from './$local.js';
 function carregaElemento(cartola) {
   const { atletas, clubes, posicoes } = cartola;
   
-  
   for (let i = 0; i <= atletas.length; i++) {
-    //console.log(posicoes[i])
+    console.log(atletas[i])
 
     const nomeDigitado = ($input.value).toLowerCase();
     const nomeDigitadoSemAcento = nomeDigitado.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -64,7 +63,12 @@ function carregaElemento(cartola) {
         ${atletas[i]['apelido']} - ${posicaoNome} <span style="color:red;">${resultado}</span></p>`;
 
       } else {
-        resultado = `Não jogou`
+        //resultado = `Não jogou`
+
+        p.innerHTML += `<p><img src="${clubeImg}" style="width: 40px;"> 
+        <img src="${atletaImgAtualizado}" style="width: 70px;"> 
+        ${atletas[i]['apelido']} - ${posicaoNome} <span style="color:red;">Não jogou</span></p>`;
+
       }
 
 
