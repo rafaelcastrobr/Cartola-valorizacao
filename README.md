@@ -14,14 +14,15 @@ Versão atual está com api de 2019.
 - JSON
 
 ### ❤️ Versão
-- 2.0 (2021 - melhorias em visual e uso de api)
-- 1.0 (2020)
+- 2.1 (2022-30-03 - atualização de api brasileiro 2022)
+- 2.0 (2021b - melhorias em visual e uso de api)
+- 1.0 (2021)
 
-
-(2020)
-![](https://github.com/rafaelcastrobr/Cartola-valorizacao/blob/newCartola/img/Captura%20de%20tela_2022-01-22_21-38-05.png?raw=true;)
 
 (2021)
+![](https://github.com/rafaelcastrobr/Cartola-valorizacao/blob/newCartola/img/Captura%20de%20tela_2022-01-22_21-38-05.png?raw=true;)
+
+(2021b)
 ![](https://github.com/rafaelcastrobr/Cartola-valorizacao/blob/newCartola/img/Captura%20de%20tela_2022-01-22_21-37-03.png?raw=true)
 
 #### Com base no Tweet do CartolaAnalitico
